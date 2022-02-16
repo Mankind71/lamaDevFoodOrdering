@@ -78,6 +78,10 @@ const Product = () => {
             <label htmlFor="garlic">Garlic Sauce</label>
           </div>
         </div>
+        <div className={styles.add}>
+          <input type="number" name="" id="" className={styles.quantity} defaultValue={1} />
+          <button className={styles.button}>Add to Cart</button>
+        </div>
       </div>
     </div>
   );
