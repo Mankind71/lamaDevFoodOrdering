@@ -6,10 +6,12 @@ import Featured from '../components/Featured'
 import PizzaList from '../components/PizzaList'
 
 export default function Home() {
+  
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pizza Restaurane</title>
+        <title>Pizza Restaurant</title>
         <meta name="description" content="Best pizza place" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
