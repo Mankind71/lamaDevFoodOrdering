@@ -1,5 +1,5 @@
-import styles from '../styles/PizzaList.module.css'
-import PizzaCard from './PizzaCard';
+import styles from "../styles/PizzaList.module.css";
+import PizzaCard from "./PizzaCard";
 
 const PizzaList = ({ pizzaList }) => {
   return (
@@ -14,13 +14,12 @@ const PizzaList = ({ pizzaList }) => {
         eligendi possimus optio recusandae dignissimos?
       </p>
       <div className={styles.wrapper}>
-        {pizzaList.map((pizza)=>(
+        {pizzaList.map((pizza) => (
           <PizzaCard key={pizza.id} pizza={pizza} />
         ))}
-
       </div>
     </div>
   );
 };
 
-export default PizzaList
+export default PizzaList;

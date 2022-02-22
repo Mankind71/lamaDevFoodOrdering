@@ -22,9 +22,9 @@ const Product = ({ pizza }) => {
     changePrice(difference);
   };
 
-  const handleClick = () =>{
-    dispatch(addProduct({...pizza,extras,price,quantity}))
-  }
+  const handleClick = () => {
+    dispatch(addProduct({ ...pizza, extras, price, quantity }));
+  };
 
   const handleChange = (e, option) => {
     const checked = e.target.checked;
@@ -89,7 +89,9 @@ const Product = ({ pizza }) => {
             defaultValue={1}
             onChange={(e) => setQuantity(e.target.value)}
           />
-          <button className={styles.button} onClick={handleClick}>Add to Cart</button>
+          <button className={styles.button} onClick={handleClick}>
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
