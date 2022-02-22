@@ -36,7 +36,7 @@ const Cart = () => {
               <td>
                 <span className={styles.extras}>
                   {product.extras.map((extra) => (
-                    <span key={extra._id}>{extra.text}</span>
+                    <span key={extra._id}>{extra.text}, </span>
                   ))}
                 </span>
               </td>
@@ -59,13 +59,13 @@ const Cart = () => {
         <div className={styles.wrapper}>
           <h2 className={styles.title}>CART TOTAL</h2>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Subtotal:</b>$79.60
+            <b className={styles.totalTextTitle}>Subtotal:</b>${cart.total}
           </div>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Discount:</b>$00.00
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>$79.60
+            <b className={styles.totalTextTitle}>Total:</b>${cart.total}
           </div>
           <button className={styles.button}>CHECKOUT NOW!</button>
         </div>
